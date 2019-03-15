@@ -8,7 +8,7 @@ before_install:
 
 script: 'true'
 
-after_install:
+after_success:
   - docker build -t sarahsga4/multi-client ./client
   - docker build -t sarahsga4/multi-nginx ./nginx
   - docker build -t sarahsga4/multi-server ./server
